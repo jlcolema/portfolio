@@ -1,3 +1,6 @@
+---
+title: Portfolio
+---
 
 <!doctype html>
 
@@ -7,15 +10,15 @@
 
 	<meta charset="utf-8" />
 
-	<title>My Portfolios</title>
+	<title>{{ title }}</title>
 
 	<meta name="description" content="Handcrafted design and development for the web" />
 	<meta name="keywords" content="web, design, development, craft, expressionengine, wordpress, eleventy, static, serverless, html, php, css, javascript" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="theme-color" content="#000000" />
 
-	<link rel="shortcut icon" href="./assets/img/favicon.png" />
-	<link rel="applel-touch-icon" href="./assets/img/touch-icon.png" />
+	<link rel="shortcut icon" href="/assets/img/favicon.png" />
+	<link rel="applel-touch-icon" href="/assets/img/touch-icon.png" />
 
 	<style>
 
@@ -33,7 +36,7 @@
 
 			<div class="mark">
 
-				<a href="./" class="mark__link">
+				<a href="/" class="mark__link">
 
 					<svg class="mark__svg"></svg>
 
@@ -75,9 +78,7 @@
 
 		<div class="wrap main__wrap">
 
-			
-My Portfolios
-
+			{{ content | safe }}
 
 			<!-- Section: Introduction -->
 
