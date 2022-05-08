@@ -95,7 +95,7 @@
     "layout": "project",
     "name": "Plus Red Elixir",
     "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
-    "overlay": "Small",
+    "overlay": "",
     "external_url_label": "View Site",
     "external_url": "http://www.redelixir.com/"
   },
