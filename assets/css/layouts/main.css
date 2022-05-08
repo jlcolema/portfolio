@@ -1,0 +1,310 @@
+/*------------------------------
+Main
+------------------------------*/
+
+.content .wrap {
+	width: 100%;
+	max-width: 1276px;
+	margin: 0 auto;
+	padding: 0 10%;
+}
+
+@media screen and (min-width: 1276px) {
+	.content .wrap {
+		padding: 0 120px;
+	}
+}
+
+.section {
+	padding: 60px 0 0 0;
+}
+
+@media screen and (min-width: 800px) {
+	.section {
+		padding: 120px 0 0 0;
+	}
+}
+
+.section .section-title {
+	margin: 0 0 1.875em 0;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #b5b5b5;
+}
+
+.projects {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (min-width: 800px) {
+	.projects {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+}
+
+.project {
+	display: block;
+	margin: 60px 0 0 0;
+}
+
+@media screen and (min-width: 800px) {
+	.project {
+		width: 47%;
+		margin: 80px 0 0 0;
+	}
+}
+
+.project:nth-child(1) {
+	margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+	.project:nth-child(2) {
+		margin: 0;
+	}
+}
+
+.project .thumbnail {
+	position: relative;
+	padding: 0 20px 0 0;
+	overflow: hidden;
+}
+
+.project .thumbnail a {
+	display: block;
+}
+
+.project img {
+	display: block;
+	box-sizing: content-box;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #dbdbdb;
+}
+
+.project .overlay {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #dbdbdb;
+	box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+.project .overlay img {
+	border: none;
+}
+
+.project .medium {
+	width: 50%;
+}
+
+.project .small {
+	width: 30%;
+}
+
+.project .title {
+	margin: 1.333333333em 0 0 0;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+	.project .title {
+		font-size: 1.125rem;
+	}
+}
+
+.project .title.available-soon {
+	color: #b5b5b5;
+}
+
+.project .title.available-soon:after {
+	content: "Available Soon";
+	position: relative;
+	bottom: 3px;
+	display: inline;
+	margin: 0 0 0 1em;
+	padding: 0 2px;
+	font-size: 0.625rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	border: 1px solid #b5b5b5;
+	color: #fff;
+	background: #b5b5b5;
+	border-radius: 3px;
+}
+
+.project .title a {
+	color: #000;
+	text-decoration: none;
+}
+
+.project .title a:hover {
+	color: #1581e8;
+}
+
+.project .responsibilities {
+	margin: 7px 0 0 0;
+}
+
+.project .responsibilities ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.project .responsibilities li {
+	display: inline;
+	line-height: 1.5;
+	color: #b5b5b5;
+}
+
+.archive .project {
+	margin: 25px 0 0 0;
+}
+
+.archive .project:nth-child(1) {
+	margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+	.archive .project:nth-child(2) {
+		margin: 0;
+	}
+}
+
+.archive .title {
+	margin: 0;
+}
+
+.archive .title.available-soon:after {
+	margin: 0;
+}
+
+.individual-project {
+	position: relative;
+}
+
+.individual-project .project-title {
+	width: 100%;
+	max-width: 16.666666667em;
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1.416666667;
+}
+
+@media screen and (min-width: 800px) {
+	.individual-project .project-title {
+		max-width: 18.055555556em;
+		font-size: 2.25rem;
+	}
+}
+
+.individual-project .external-url {
+	margin: 30px 0 0 0;
+}
+
+.individual-project .external-url a {
+	display: inline-block;
+	padding: 5px 12px;
+	color: #fff;
+	background-color: #b5b5b5;
+	text-decoration: none;
+}
+
+.individual-project .external-url a:hover {
+	background-color: #1581e8;
+}
+
+.individual-project .samples {
+	position: relative;
+	padding: 60px 34px 0 0;
+	overflow: hidden;
+}
+
+.individual-project .samples.multiple {
+	padding-right: 34px;
+}
+
+@media screen and (min-width: 800px) {
+	.individual-project .samples {
+		padding-top: 120px;
+	}
+}
+
+.individual-project .image {
+	border: 1px solid #dbdbdb;
+}
+
+.individual-project img {
+	display: block;
+	box-sizing: content-box;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.individual-project .overlay {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #dbdbdb;
+	box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.individual-project .medium {
+	width: 50%;
+}
+
+@media screen and (min-width: 1250px) {
+	.individual-project .medium {
+		width: auto;
+	}
+}
+
+.individual-project .small {
+	width: 30%;
+}
+
+@media screen and (min-width: 1100px) {
+	.individual-project .small {
+		width: auto;
+	}
+}
+
+.individual-project .responsibilities {
+	padding: 60px 0 0 0;
+}
+
+@media screen and (min-width: 800px) {
+	.individual-project .responsibilities {
+		padding: 120px 0 0 0;
+	}
+}
+
+.individual-project .responsibilities .title {
+	margin: 0 0 1.875em 0;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #b5b5b5;
+}
+
+.individual-project .responsibilities ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.individual-project .responsibilities li {
+	display: inline;
+}

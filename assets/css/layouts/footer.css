@@ -1,0 +1,89 @@
+/*------------------------------
+Footer
+------------------------------*/
+
+.footer {
+	padding: 60px 0;
+}
+
+@media screen and (min-width: 800px) {
+	.footer {
+		padding: 120px 0;
+	}
+}
+
+.footer .wrap {
+	width: 100%;
+	max-width: 1276px;
+	margin: 0 auto;
+	padding: 0 10%;
+}
+
+@media screen and (min-width: 1276px) {
+	.footer .wrap {
+		padding: 0 120px;
+	}
+}
+
+.contact {
+	margin: 0 0 60px 0;
+}
+
+@media screen and (min-width: 800px) {
+	.contact {
+		margin: 0 0 120px 0;
+	}
+}
+
+.contact .section-title {
+	margin: 0 0 1.5em 0;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #b5b5b5;
+}
+
+.contact-information {
+	width: 100%;
+	max-width: 40.625em;
+}
+
+.contact-information h3 {
+	margin: 0 0 0.8em 0;
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 800px) {
+	.contact-information h3 {
+		font-size: 1.5rem;
+	}
+}
+
+.contact-information p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.contact-information a {
+	color: #1581e8;
+	text-decoration: none;
+}
+
+.contact-information a:hover {
+	border-bottom: 1px solid #1581e8;
+}
+
+.copyright {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.copyright a {
+	color: #000;
+	text-decoration: none;
+}
+
+.copyright a:hover {
+	color: #1581e8;
+}
