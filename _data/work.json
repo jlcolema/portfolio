@@ -79,7 +79,7 @@
     "layout": "project",
     "name": "HWC Engineering",
     "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
-    "overlay": "Small",
+    "overlay": "",
     "external_url_label": "View Site",
     "external_url": "http://www.hwcengineering.com/"
   },
