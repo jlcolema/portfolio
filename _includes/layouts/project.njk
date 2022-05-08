@@ -1,0 +1,124 @@
+---
+layout: layouts/base.njk
+---
+
+{#
+
+---
+layout: project
+title: "Alex Curtis Wellness"
+date: 2017-03-25 07:00:00 -0600
+excerpt:
+categories:
+tags: WordPress, Development, HTML, PHP, CSS, JavaScript
+image:
+		large:
+				1000x800: alex-curtis-wellness-large-1000x800.jpg
+				640x512: alex-curtis-wellness-large-640x512.jpg
+		<!-- medium:
+				540x691: alex-curtis-wellness-medium-540x691.jpg
+				350x448: alex-curtis-wellness-medium-350x448.jpg -->
+		small:
+				320x568: alex-curtis-wellness-small-320x568.jpg
+				200x355: alex-curtis-wellness-small-200x355.jpg
+external_url_label: View Site
+external_url: http://www.alexcurtiswellness.com/
+---
+
+#}
+
+<div class="individual-project">
+
+	<h1 class="project-title">{{ project.name }}</h1>
+
+	{#
+
+	{% if page.excerpt %}
+
+		<div class="excerpt">
+
+			<p>{{ page.excerpt }}</p>
+
+		</div>
+
+	{% endif %}
+
+	#}
+
+	{% if project.external_url %}
+
+		<div class="external-url">
+
+			<a href="{{ project.external_url }}" rel="external">{{ project.external_url_label }}</a>
+
+		</div>
+
+	{% endif %}
+
+	<div class="samples {%if project.image.small or project.image.medium %}multiple{% endif %}">
+
+		<div class="image">
+
+			<picture>
+
+				<source srcset="/media/work/{{ project.name | slug }}-large-1000x800.jpg" media="(min-width: 800px)">
+
+				<img srcset="/media/work/{{ project.name | slug }}-large-640x512.jpg" alt="Large screen view of {{ project.name }}">
+
+			</picture>
+
+		</div>
+
+		{% if project.overlay == 'Small' %}
+
+			<div class="overlay small">
+
+				<picture>
+
+					<source srcset="/media/work/{{ project.name | slug }}-small-320x568.jpg" media="(min-width: 800px)">
+
+					<img srcset="/media/work/{{ project.name | slug }}-200x355.jpg" alt="Small screen view of {{ project.name }}">
+
+				</picture>
+
+			</div>
+
+		{% endif %}
+
+		{% if project.overlay == 'Medium' %}
+
+			<div class="overlay medium">
+
+				<picture>
+
+					<source srcset="/media/work/{{ project.name | slug }}-medium-540x691.jpg" media="(min-width: 800px)">
+
+					<img srcset="/media/work/{{ project.name | slug }}-medium-350x448.jpg" alt="Medium screen view of {{ project.name }}">
+
+				</picture>
+
+			</div>
+
+		{% endif %}
+
+	</div>
+
+
+	<div class="responsibilities">
+
+		<h2 class="title">Responsibilities</h2>
+
+		<ul>
+
+			{% for tag in project.tags %}
+
+				<li>{{ tag }}</li>
+
+			{% endfor %}
+
+		</ul>
+
+	</div>
+
+
+</div>
