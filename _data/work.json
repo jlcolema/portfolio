@@ -1,0 +1,170 @@
+[
+  {
+    "layout": "project",
+    "name": "AGAH Lab",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "url_of_site"
+  },
+  {
+    "layout": "project",
+    "name": "Alex Curtis Wellness",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.alexcurtiswellness.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Bluelock",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://web.archive.org/web/20120804230850/http://www.bluelock.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Boston Scientific",
+    "tags": ["Development, HTML, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.bostonscientific.com/2013ar/index.html"
+  },
+  {
+    "layout": "project",
+    "name": "Carson Design",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.carsondesign.com"
+  },
+  {
+    "layout": "project",
+    "name": "Chard Snyder",
+    "tags": ["ExpressionEngine, Development, HTML, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.chard-snyder.com/"
+  },
+  {
+    "layout": "project",
+    "name": "CML Viz",
+    "tags": ["Development, HTML, PHP, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://cmlviz.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Cullen Meyer",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://web.archive.org/web/20140704005314/http://www.cullenmeyer.com/"
+  },
+  {
+    "layout": "project",
+    "name": "David Hamilton Property Group",
+    "tags": ["Craft, Development, HTML, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.davidhamilton.com.au/"
+  },
+  {
+    "layout": "project",
+    "name": "HWC Engineering",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.hwcengineering.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Miles Design",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://web.archive.org/web/20140103072102/http://www.milesdesign.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Plus Red Elixir",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.redelixir.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Reakt",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.reakt.com"
+  },
+  {
+    "layout": "project",
+    "name": "Sport Graphics",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.sportg.com"
+  },
+  {
+    "layout": "project",
+    "name": "Summit Realty Group",
+    "tags": ["ExpressionEngine, Development, HTML, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "https://web.archive.org/web/20150427034952/http://summitrealtygroup.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Sun Tan City",
+    "tags": ["Development, HTML, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "https://my.suntancity.com/"
+  },
+  {
+    "layout": "project",
+    "name": "Tend",
+    "tags": ["Squarespace, Development, HTML, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.wearetend.com"
+  },
+  {
+    "layout": "project",
+    "name": "Time Warner Cable",
+    "tags": ["Development, HTML, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://timewarnercable.coleman.work"
+  },
+  {
+    "layout": "project",
+    "name": "University Mechanical Contractors",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "featured": "Featured",
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.umci.com"
+  },
+  {
+    "layout": "project",
+    "name": "Voyles Zahn and Paul",
+    "tags": ["WordPress, Development, HTML, PHP, CSS, JavaScript"],
+    "overlay": "Small",
+    "external_url_label": "View Site",
+    "external_url": "http://www.vzplaw.com"
+  }
+]
