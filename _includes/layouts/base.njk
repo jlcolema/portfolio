@@ -29,7 +29,7 @@
 
 			<div class="mark">
 
-				<a href="/">
+				<a href="/" class="mark__link">
 
 					{% include 'logo.svg' %}
 
@@ -43,19 +43,19 @@
 
 					{% if project.featured == 'Featured' %}
 
-						<a href="/#work">
+						<a href="/#work" class="return__link">
 
 							Work
 
 					{% else %}
 
-						<a href="/#archive">
+						<a href="/#archive" class="return__link">
 
 							Archive
 
 					{% endif %}
 
-						<span class="arrow">&#8617;&#xFE0e;</span>
+						<span class="arrow return__arrow">&#8617;&#xFE0e;</span>
 
 					</a>
 
@@ -67,23 +67,23 @@
 
 				<nav class="primary-navigation" role="navigation">
 
-					<ul>
+					<ul class="list primary-navigation__list">
 
-						<li>
+						<li class="item primary-navigation__item">
 
-							<a href="#work">Work</a>
-
-						</li>
-
-						<li>
-
-							<a href="#archive">Archive</a>
+							<a href="#work" class="link primary-navigation__link">Work</a>
 
 						</li>
 
-						<li>
+						<li class="item primary-navigation__item">
 
-							<a href="#contact">Contact</a>
+							<a href="#archive" class="link primary-navigation__link">Archive</a>
+
+						</li>
+
+						<li class="item primary-navigation__item">
+
+							<a href="#contact" class="link primary-navigation__link">Contact</a>
 
 						</li>
 
