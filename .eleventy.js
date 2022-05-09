@@ -1,4 +1,4 @@
-// const CleanCSS = require("clean-css");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
 	// Output directory: _site
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
 
 	// Inline Minified CSS
-	// eleventyConfig.addFilter("cssmin", function(code) {
-		// return new CleanCSS({}).minify(code).styles;
-	// });
+	eleventyConfig.addFilter("cssmin", function(code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
 };

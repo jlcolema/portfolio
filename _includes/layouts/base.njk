@@ -17,7 +17,29 @@
 	<link rel="icon" href="/assets/img/favicon.png" />
 	<link rel="apple-touch-icon" href="/assets/img/touch-icon.png" />
 
-	<link rel="stylesheet" href="/assets/css/styles.css" media="screen" />
+	{# Capture the CSS content as a Nunjucks variable. #}
+
+	{% set css %}
+
+		{# Common #}
+
+		{% include "assets/css/common/variables.css" %}
+		{% include "assets/css/common/reset.css" %}
+		{% include "assets/css/common/baseline.css" %}
+
+		{# Layouts #}
+
+		{% include "assets/css/layouts/header.css" %}
+		{% include "assets/css/layouts/main.css" %}
+		{% include "assets/css/layouts/footer.css" %}
+
+	{% endset %}
+
+	<style type="text/css">
+
+		{{ css | cssmin | safe }}
+
+	</style>
 
 </head>
 
