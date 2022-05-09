@@ -55,7 +55,7 @@ external_url: http://www.alexcurtiswellness.com/
 
 	{% endif %}
 
-	<div class="samples {%if project.image.small or project.image.medium %}multiple{% endif %}">
+	<div class="samples{%if project.overlay == 'Small' or project.overlay == 'Medium' %} multiple{% endif %}">
 
 		<div class="image">
 
