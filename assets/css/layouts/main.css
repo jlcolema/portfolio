@@ -167,6 +167,15 @@ Main
 	color: #b5b5b5;
 }
 
+.project .responsibilities li:after {
+	display: inline-block;
+	content: ", ";
+}
+
+.project .responsibilities li:last-of-type:after {
+	content: none;
+}
+
 .archive .project {
 	margin: 25px 0 0 0;
 }
@@ -307,4 +316,13 @@ Main
 
 .individual-project .responsibilities li {
 	display: inline;
+}
+
+.individual-project .responsibilities li:after {
+	display: inline-block;
+	content: ", ";
+}
+
+.individual-project .responsibilities li:last-of-type:after {
+	content: none;
 }
