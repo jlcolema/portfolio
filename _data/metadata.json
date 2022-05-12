@@ -1,0 +1,23 @@
+{
+  "title": "Joshua Coleman",
+  "url": "https://coleman.work/",
+  "mediaPath": "/media/work",
+  "language": "en",
+  "description": "Handcrafted design and development for the web",
+  "keywords": "web, design, development, craft, expressionengine, wordpress, eleventy, static, serverless, html, php, css, javascript",
+  "feed": {
+    "subtitle": "Handcrafted design and development for the web",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://coleman.work/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://coleman.work/feed/feed.json"
+  },
+  "author": {
+    "name": "Joshua Coleman",
+    "email": "coleman.work@icloud.com",
+    "url": "https://coleman.work/about/"
+  }
+}
