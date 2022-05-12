@@ -168,7 +168,7 @@ Main
 }
 
 .project .responsibilities li:after {
-	display: inline-block;
+	display: inline;
 	content: ", ";
 }
 
