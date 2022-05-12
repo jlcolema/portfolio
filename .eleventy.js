@@ -36,4 +36,18 @@ module.exports = function(eleventyConfig) {
 
 	// Images
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+ // Get only content that matches a tag
+	  eleventyConfig.addCollection("work", function(collectionApi) {
+		return collectionApi.getFilteredByTag("project");
+	  });
+
+	return {
+		dir: {
+			input: ".",
+			includes: "_includes",
+			data: "_data",
+			output: "_site"
+		}
+	};
 };
