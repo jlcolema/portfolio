@@ -1,0 +1,29 @@
+---
+layout: "layouts/base.njk"
+alias: "project"
+title: "Cullen Meyer"
+slug: "cullen-meyer"
+permalink: "{{ slug }}.html"
+external_url: "http://web.archive.org/web/20140704005314/http://www.cullenmeyer.com/"
+external_url_label: "Visit Site"
+isFeatured: ""
+overlay:
+  size: ""
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+image:
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+tags: project
+responsibilities:
+  - WordPress
+  - Development
+  - HTML
+  - PHP
+  - CSS
+  - JavaScript
+---
+
+{% include 'layouts/project.njk' %}

@@ -1,0 +1,27 @@
+---
+layout: "layouts/base.njk"
+alias: "project"
+title: "Time Warner Cable"
+slug: "time-warner-cable"
+permalink: "{{ slug }}.html"
+external_url: ""
+external_url_label: "Visit Site"
+isFeatured: "yes"
+overlay:
+  size: "small"
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+image:
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+tags: project
+responsibilities:
+  - Development
+  - HTML
+  - CSS
+  - JavaScript
+---
+
+{% include 'layouts/project.njk' %}

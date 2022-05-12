@@ -1,0 +1,29 @@
+---
+layout: "layouts/base.njk"
+alias: "project"
+title: "University Mechanical Contractors"
+slug: "university-mechanical-contractors"
+permalink: "{{ slug }}.html"
+external_url: "http://www.umci.com"
+external_url_label: "Visit Site"
+isFeatured: "yes"
+overlay:
+  size: "small"
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+image:
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+tags: project
+responsibilities:
+  - WordPress
+  - Development
+  - HTML
+  - PHP
+  - CSS
+  - JavaScript
+---
+
+{% include 'layouts/project.njk' %}

@@ -1,0 +1,29 @@
+---
+layout: "layouts/base.njk"
+alias: "project"
+title: "VT MEMS Laboratory"
+slug: "agah-lab"
+permalink: "{{ slug | url }}.html"
+external_url: ""
+external_url_label: "Visit Site"
+isFeatured: "yes"
+overlay:
+  size: "small"
+  small: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+  medium: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+  large: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+image:
+  small: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+  medium: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+  large: "{{ metadata.mediaPath | url }}/{{ slug | url }}.jpg"
+tags: project
+responsibilities:
+  - WordPress
+  - Development
+  - HTML
+  - PHP
+  - CSS
+  - JavaScript
+---
+
+{% include 'layouts/project.njk' %}

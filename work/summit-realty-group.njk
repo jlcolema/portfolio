@@ -1,0 +1,28 @@
+---
+layout: "layouts/base.njk"
+alias: "project"
+title: "Summit Realty Group"
+slug: "summit-realty-group"
+permalink: "{{ slug }}.html"
+external_url: "https://web.archive.org/web/20150427034952/http://summitrealtygroup.com/"
+external_url_label: "Visit Site"
+isFeatured: "yes"
+overlay:
+  size: "medium"
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+image:
+  small: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  medium: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+  large: "{{ metadata.mediaPath }}/{{ slug }}.jpg"
+tags: project
+responsibilities:
+  - ExpressionEngine
+  - Development
+  - HTML
+  - CSS
+  - JavaScript
+---
+
+{% include 'layouts/project.njk' %}
