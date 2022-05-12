@@ -1,44 +1,40 @@
----
-layout: layouts/base.njk
----
-
 <div class="individual-project">
 
-	<h1 class="project-title">{{ project.name }}</h1>
+	<h1 class="project-title">{{ title }}</h1>
 
-	{% if project.external_url %}
+	{% if external_url %}
 
 		<div class="external-url">
 
-			<a href="{{ project.external_url }}" rel="external">{{ project.external_url_label }}</a>
+			<a href="{{ external_url }}" rel="external">{{ external_url_label }}</a>
 
 		</div>
 
 	{% endif %}
 
-	<div class="samples{%if project.overlay == 'Small' or project.overlay == 'Medium' %} multiple{% endif %}">
+	<div class="samples{%if overlay.size == 'small' or overlay.size == 'medium' %} multiple{% endif %}">
 
 		<div class="image">
 
 			<picture>
 
-				<source srcset="/media/work/{{ project.name | slug }}-large-1000x800.jpg" media="(min-width: 800px)">
+				<source srcset="/media/work/{{ slug }}-large.jpg" media="(min-width: 800px)">
 
-				<img srcset="/media/work/{{ project.name | slug }}-large-640x512.jpg" alt="Large screen view of {{ project.name }}">
+				<img srcset="/media/work/{{ slug }}-large.jpg" alt="Large screen view of {{ title }}">
 
 			</picture>
 
 		</div>
 
-		{% if project.overlay == 'Small' %}
+		{% if overlay.size == 'small' %}
 
 			<div class="overlay small">
 
 				<picture>
 
-					<source srcset="/media/work/{{ project.name | slug }}-small-320x568.jpg" media="(min-width: 800px)">
+					<source srcset="/media/work/{{ slug }}-small.jpg" media="(min-width: 800px)">
 
-					<img srcset="/media/work/{{ project.name | slug }}-200x355.jpg" alt="Small screen view of {{ project.name }}">
+					<img srcset="/media/work/{{ slug }}-small.jpg" width="" height="" alt="Small screen view of {{ title }}">
 
 				</picture>
 
@@ -46,15 +42,15 @@ layout: layouts/base.njk
 
 		{% endif %}
 
-		{% if project.overlay == 'Medium' %}
+		{% if overlay.size == 'medium' %}
 
 			<div class="overlay medium">
 
 				<picture>
 
-					<source srcset="/media/work/{{ project.name | slug }}-medium-540x691.jpg" media="(min-width: 800px)">
+					<source srcset="/media/work/{{ slug }}-medium.jpg" media="(min-width: 800px)">
 
-					<img srcset="/media/work/{{ project.name | slug }}-medium-350x448.jpg" alt="Medium screen view of {{ project.name }}">
+					<img srcset="/media/work/{{ slug }}-medium.jpg" width="" height="" alt="Medium screen view of {{ title }}">
 
 				</picture>
 
@@ -70,9 +66,9 @@ layout: layouts/base.njk
 
 		<ul>
 
-			{% for tag in project.tags %}
+			{% for responsibility in responsibilities %}
 
-				<li>{{ tag }}</li>
+				<li>{{ responsibility }}</li>
 
 			{% endfor %}
 

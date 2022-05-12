@@ -6,13 +6,17 @@
 
 	<meta charset="utf-8" />
 
-	<title>{% if pagination.alias == 'project' %}Work: {{ project.name }}{% else %}Handcrafted design and development for the web{% endif %} &mdash; Joshua Coleman</title>
+	<title>{% if pagination.alias == 'project' %}Work: {{ project.name }}{% else %}{{ metadata.description }}{% endif %} &mdash; {{ metadata.title }}</title>
 
-	<meta name="description" content="Handcrafted design and development for the web" />
+	<meta name="description" content="{{ metadata.description }}" />
+	<meta name="keywords" content="{{ metadata.keywords }}" />
+	<meta name="generator" content="{{ eleventy.generator }}" />
 
-	<meta name="keywords" content="web, design, development, craft, expressionengine, wordpress, eleventy, static, serverless, html, php, css, javascript" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="theme-color" content="#ffffff" />
+
+	<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}" />
+	<link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}" />
 
 	<link rel="icon" href="/assets/img/favicon.png" />
 	<link rel="apple-touch-icon" href="/assets/img/touch-icon.png" />
@@ -37,13 +41,15 @@
 
 	<style type="text/css">
 
+		{# Inline and minify CSS #}
+
 		{{ css | cssmin | safe }}
 
 	</style>
 
 </head>
 
-<body class="{% if pagination.alias == 'project' %}single-project{% endif %}">
+<body class="{% if alias == 'project' %}single-project{% endif %}">
 
 	<header class="header">
 
@@ -51,7 +57,7 @@
 
 			<div class="mark">
 
-				<a href="/" class="mark__link">
+				<a href="/" aria-label="{{ metadata.author.name }}"class="mark__link">
 
 					{% include 'logo.svg' %}
 
@@ -59,11 +65,11 @@
 
 			</div>
 
-			{% if pagination.alias == 'project' %}
+			{% if alias == 'project' %}
 
 				<div class="return">
 
-					{% if project.featured == 'Featured' %}
+					{% if isFeatured == 'yes' %}
 
 						<a href="/#work" class="return__link">
 
@@ -85,7 +91,7 @@
 
 			{% else %}
 
-				<h1 class="introduction">Hello, I&rsquo;m Joshua Coleman, <span class="line-break">an independent web designer and developer.</span> <span class="line-break">Nice to meet you.</span></h1>
+				<h1 class="introduction">Hello, I&rsquo;m {{ metadata.author.name }}, <span class="line-break">an independent web designer and developer.</span> <span class="line-break">Nice to meet you.</span></h1>
 
 				<nav class="primary-navigation" role="navigation">
 
@@ -145,13 +151,13 @@
 
 					<h3>Let&rsquo;s work together.</h3>
 
-					<p>I love designing and building sites that work everywhere. If you think I&rsquo;d be a good fit for your next project, <a href="mailto:coleman.work@icloud.com?subject=coleman.work:%20A%20note%20via%20the%20website">drop me a line</a>. I&rsquo;d love to hear from you.</p>
+					<p>I love designing and building sites that work everywhere. If you think I&rsquo;d be a good fit for your next project, <a href="mailto:{{ metadata.author.email }}?subject={{ metadata.url }}:%20A%20note%20via%20the%20website">drop me a line</a>. I&rsquo;d love to hear from you.</p>
 
 				</div>
 
 			</div>
 
-			<p class="copyright">Copyright 2022 Joshua Coleman.</p>
+			<p class="copyright">Copyright 2022 {{ metadata.author.name }}.</p>
 
 		</div>
 
