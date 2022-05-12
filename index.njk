@@ -12,328 +12,67 @@ layout: layouts/base.njk
 
 	<ul class="projects">
 
-		<li class="project">
+		{%- for project in collections.work -%}
 
-			<div class="thumbnail">
+			{% if project.data.isFeatured == 'yes' %}
 
-				<a href="/agah-lab.html">
+				<li class="project">
 
-					<img src="/media/work/agah-lab-large-640x512.jpg" width="640" height="512" alt="Large screen view of VT Mems Laboratory" />
+					<div class="thumbnail">
 
-					<div class="overlay small">
+						<a href="{{ project.data.slug }}.html">
 
-						<img src="/media/work/agah-lab-small-200x355.jpg" width="200" height="355" alt="Small screen view of VT Mems Laboratory" />
+							<img src="/media/work/{{ project.data.slug }}-large.jpg" width="640" height="512" alt="Large screen view of {{ project.data.title }}" />
 
-					</div>
+							{% if project.data.overlay.size == 'small' %}
 
-				</a>
+								<div class="overlay small">
 
-			</div>
+									<img src="/media/work/{{ project.data.slug }}-small.jpg" width="200" height="355" alt="Small screen view of {{ project.data.title }}" />
 
-			<h3 class="title">
+								</div>
 
-				<a href="/agah-lab.html">VT Mems Laboratory</a>
+							{% endif %}
 
-			</h3>
+							{% if project.data.overlay.size == 'medium' %}
 
-			<div class="responsibilities">
+								<div class="overlay medium">
 
-				<ul>
+									<img src="/media/work/{{ project.data.slug }}-medium.jpg" width="200" height="355" alt="Medium screen view of {{ project.data.title }}" />
 
-					<li>WordPress</li>
-					<li>Design</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>PHP</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
+								</div>
 
-				</ul>
+							{% endif %}
 
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/carson-design.html">
-
-					<img src="/media/work/carson-design-large-640x512.jpg" width="640" height="512" alt="Large screen view of Carson Design" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/carson-design-small-200x355.jpg" width="200" height="355" alt="Small screen view of Carson Design" />
+						</a>
 
 					</div>
 
-				</a>
+					<h3 class="title">
 
-			</div>
+						<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
 
-			<h3 class="title">
+					</h3>
 
-				<a href="/carson-design.html">Carson Design</a>
+					<div class="responsibilities">
 
-			</h3>
+						<ul>
 
-			<div class="responsibilities">
+							{%- for responsibility in project.data.responsibilities -%}
 
-				<ul>
+								<li>{{ responsibility }}</li>
 
-					<li>WordPress</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>PHP</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
+							{%- endfor -%}
 
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/chard-snyder.html">
-
-					<img src="/media/work/chard-snyder-large-640x512.jpg" width="640" height="512" alt="Large screen view of Chard Snyder" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/chard-snyder-small-200x355.jpg" width="200" height="355" alt="Small screen view of Chard Snyder" />
+						</ul>
 
 					</div>
 
-				</a>
+				</li>
 
-			</div>
+			{% endif %}
 
-			<h3 class="title">
-
-				<a href="/chard-snyder.html">Chard Snyder</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>ExpressionEngine</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/cml-viz.html">
-
-					<img src="/media/work/cml-viz-large-640x512.jpg" width="640" height="512" alt="Large screen view of CML Viz" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/cml-viz-small-200x355.jpg" width="200" height="355" alt="Small screen view of CML Viz" />
-
-					</div>
-
-				</a>
-
-			</div>
-
-			<h3 class="title">
-
-				<a href="/cml-viz.html">CML Viz</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>Development</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/reakt.html">
-
-					<img src="/media/work/reakt-large-640x512.jpg" width="640" height="512" alt="Large screen view of Reakt" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/reakt-small-200x355.jpg" width="200" height="355" alt="Small screen view of Reakt" />
-
-					</div>
-
-				</a>
-
-			</div>
-
-			<h3 class="title">
-
-				<a href="/reakt.html">Reakt</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>WordPress</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>PHP</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/summit-realty-group.html">
-
-					<img src="/media/work/summit-realty-group-large-640x512.jpg" width="640" height="512" alt="Large screen view of Summit Realty Group" />
-
-					<div class="overlay medium">
-
-						<img src="/media/work/summit-realty-group-medium-350x448.jpg" width="350" height="448" alt="Medium screen view of Summit Realty Group" />
-
-					</div>
-
-				</a>
-
-			</div>
-
-			<h3 class="title">
-
-				<a href="/summit-realty-group.html">Summit Realty Group</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>ExpressionEngine</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/time-warner-cable.html">
-
-					<img src="/media/work/time-warner-cable-large-640x512.jpg" width="640" height="512" alt="Large screen view of Time Warner Cable" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/time-warner-cable-small-200x355.jpg" width="200" height="355" alt="Small screen view of Time Warner Cable" />
-
-					</div>
-
-				</a>
-
-			</div>
-
-			<h3 class="title">
-
-				<a href="/time-warner-cable.html">Time Warner Cable</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>Development</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
-
-		<li class="project">
-
-			<div class="thumbnail">
-
-				<a href="/university-mechanical-contractors.html">
-
-					<img src="/media/work/university-mechanical-contractors-large-640x512.jpg" width="640" height="512" alt="Large screen view of University Mechanical Contractors" />
-
-					<div class="overlay small">
-
-						<img src="/media/work/university-mechanical-contractors-small-200x355.jpg" width="200" height="355" alt="Small screen view of University Mechanical Contractors" />
-
-					</div>
-
-				</a>
-
-			</div>
-
-			<h3 class="title">
-
-				<a href="/university-mechanical-contractors.html">University Mechanical Contractors</a>
-
-			</h3>
-
-			<div class="responsibilities">
-
-				<ul>
-
-					<li>WordPress</li>
-					<li>Development</li>
-					<li>HTML</li>
-					<li>PHP</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-
-				</ul>
-
-			</div>
-
-		</li>
+		{%- endfor -%}
 
 	</ul>
 
@@ -349,125 +88,23 @@ layout: layouts/base.njk
 
 	<ul class="projects">
 
-		<li class="project">
+		{%- for project in collections.work -%}
 
-			<h3 class="title">
+			{% if project.data.isFeatured == '' %}
 
-				<a href="/alex-curtis-wellness.html">Alex Curtis Wellness</a>
+				<li class="project">
 
-			</h3>
+					<h3 class="title">
 
-		</li>
+						<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
 
-		<li class="project">
+					</h3>
 
-			<h3 class="title">
+				</li>
 
-				<a href="/bluelock.html">Bluelock</a>
+			{% endif %}
 
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/boston-scientific.html">Boston Scientific</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/cullen-meyer.html">Cullen Meyer</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/david-hamilton-property-group.html">David Hamilton Property Group</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/hwc-engineering.html">HWC Engineering</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/miles-design.html">Miles Design</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/plus-red-elixir.html">Plus Red Elixir</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/sport-graphics.html">Sport Graphics</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/sun-tan-city.html">Sun Tan City</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/tend.html">Tend</a>
-
-			</h3>
-
-		</li>
-
-		<li class="project">
-
-			<h3 class="title">
-
-				<a href="/voyles-zahn-and-paul.html">Voyles, Zahn &amp; Paul</a>
-
-			</h3>
-
-		</li>
+		{%- endfor -%}
 
 	</ul>
 
