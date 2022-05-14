@@ -13,5 +13,5 @@ html {
 body {
 	line-height: 1.5;
 	font-family: 'Roboto Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #000;
+	color: var(--color-black);
 }

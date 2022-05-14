@@ -72,12 +72,12 @@ Header
 		}
 
 			.return__link {
-				color: #b5b5b5;
+				color: var(--color-gray-30);
 				text-decoration: none;
 			}
 
 			.return__link:hover {
-				color: #1581e8;
+				color: var(--color-primary);
 			}
 
 		/* Home page introduction */
@@ -144,10 +144,10 @@ Header
 				}
 
 					.primary-navigation__link {
-						color: #1581e8;
+						color: var(--color-primary);
 						text-decoration: none;
 					}
 
 					.primary-navigation__link:hover {
-						border-bottom: 1px solid #1581e8;
+						border-bottom: 1px solid var(--color-primary);
 					}
