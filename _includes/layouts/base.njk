@@ -21,7 +21,8 @@
 	<link rel="icon" href="/assets/img/favicon.png" />
 	<link rel="apple-touch-icon" href="/assets/img/touch-icon.png" />
 
-	{# Capture the CSS content as a Nunjucks variable. #}
+	{# Capture the CSS content as a Nunjucks variable.
+	   Source: https://www.11ty.dev/docs/quicktips/concatenate/ #}
 
 	{% set css %}
 
@@ -40,8 +41,6 @@
 	{% endset %}
 
 	<style type="text/css">
-
-		{# Inline and minify CSS #}
 
 		{{ css | cssmin | safe }}
 
