@@ -90,19 +90,15 @@ layout: layouts/base.njk
 
 		{%- for project in collections.work -%}
 
-			{% if project.data.isFeatured == '' %}
+			<li class="project">
 
-				<li class="project">
+				<h3 class="title">
 
-					<h3 class="title">
+					<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
 
-						<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
+				</h3>
 
-					</h3>
-
-				</li>
-
-			{% endif %}
+			</li>
 
 		{%- endfor -%}
 
