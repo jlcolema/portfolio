@@ -2,31 +2,31 @@
 layout: layouts/base.njk
 ---
 
-<section id="work" class="work section">
+<section id="work" class="work section section__work">
 
-	<header class="section-header">
+	<header class="section-header section__header">
 
-		<h2 class="section-title">Selected Work</h2>
+		<h2 class="section-title section__title">Selected Work</h2>
 
 	</header>
 
-	<ul class="projects">
+	<ul class="projects project__list project__list--featured">
 
 		{%- for project in collections.work -%}
 
 			{% if project.data.isFeatured == 'yes' %}
 
-				<li class="project">
+				<li class="project project__item project__item--featured">
 
-					<div class="thumbnail">
+					<div class="thumbnail project__thumbnail project__thumbnail--featured">
 
-						<a href="{{ project.data.slug }}.html">
+						<a href="{{ project.data.slug }}.html" class="project__link project__link--featured">
 
-							<img src="/media/work/{{ project.data.slug }}-large.jpg" width="640" height="512" alt="Large screen view of {{ project.data.title }}" />
+							<img src="/media/work/{{ project.data.slug }}-large.jpg" width="640" height="512" alt="Large screen view of {{ project.data.title }}" class="project__image project__image--featured" />
 
 							{% if project.data.overlay.size == 'small' %}
 
-								<div class="overlay small">
+								<div class="overlay small project__overlay project__overlay--small">
 
 									<img src="/media/work/{{ project.data.slug }}-small.jpg" width="200" height="355" alt="Small screen view of {{ project.data.title }}" />
 
@@ -36,7 +36,7 @@ layout: layouts/base.njk
 
 							{% if project.data.overlay.size == 'medium' %}
 
-								<div class="overlay medium">
+								<div class="overlay medium project__overlay project__overlay--medium">
 
 									<img src="/media/work/{{ project.data.slug }}-medium.jpg" width="200" height="355" alt="Medium screen view of {{ project.data.title }}" />
 
@@ -48,7 +48,7 @@ layout: layouts/base.njk
 
 					</div>
 
-					<h3 class="title">
+					<h3 class="title project__title project__title--featured">
 
 						<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
 
@@ -56,11 +56,11 @@ layout: layouts/base.njk
 
 					<div class="responsibilities">
 
-						<ul>
+						<ul class="responsibilities__list">
 
 							{%- for responsibility in project.data.responsibilities -%}
 
-								<li>{{ responsibility }}</li>
+								<li class="responsibilities__item">{{ responsibility }}</li>
 
 							{%- endfor -%}
 
@@ -71,34 +71,6 @@ layout: layouts/base.njk
 				</li>
 
 			{% endif %}
-
-		{%- endfor -%}
-
-	</ul>
-
-</section>
-
-<section id="archive" class="archive section">
-
-	<header class="section-header">
-
-		<h2 class="section-title">Archive</h2>
-
-	</header>
-
-	<ul class="projects">
-
-		{%- for project in collections.work -%}
-
-			<li class="project">
-
-				<h3 class="title">
-
-					<a href="{{ project.data.slug }}.html">{{ project.data.title }}</a>
-
-				</h3>
-
-			</li>
 
 		{%- endfor -%}
 

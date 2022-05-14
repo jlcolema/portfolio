@@ -130,6 +130,34 @@
 
 			{{ content | safe }}
 
+			<section id="archive" class="archive section section__archive">
+
+				<header class="section-header section__header">
+
+					<h2 class="section-title section__title">Archive</h2>
+
+				</header>
+
+				<ul class="projects project__list project__list--archive">
+
+					{%- for project in collections.work -%}
+
+						<li class="project project__item project__item--archive">
+
+							<h3 class="title project__title project__title--archive">
+
+								<a href="{{ project.data.slug }}.html" class="project__link project__link--archive">{{ project.data.title }}</a>
+
+							</h3>
+
+						</li>
+
+					{%- endfor -%}
+
+				</ul>
+
+			</section>
+
 		</div>
 
 	</main>
