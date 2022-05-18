@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			// The entire project folder
+			"name": "Everything",
+			"path": "."
+		},
+		{
+			// Source files
+			"name": "Source",
+			"path": "assets"
+		}
+	],
+	"settings": {}
+}
