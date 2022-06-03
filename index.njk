@@ -22,13 +22,13 @@ layout: layouts/base.njk
 
 						<a href="{{ project.data.slug }}.html" class="project__link project__link--featured">
 
-							<img src="/media/work/{{ project.data.slug }}-large.jpg" width="640" height="512" alt="Large screen view of {{ project.data.title }}" class="project__image project__image--featured" />
+							<img src="/media/work/{{ project.data.slug }}-large.jpg" loading="lazy" width="640" height="512" alt="Large screen view of {{ project.data.title }}" class="project__image project__image--featured" />
 
 							{% if project.data.overlay.size == 'small' %}
 
 								<div class="overlay small project__overlay project__overlay--small">
 
-									<img src="/media/work/{{ project.data.slug }}-small.jpg" width="200" height="355" alt="Small screen view of {{ project.data.title }}" />
+									<img src="/media/work/{{ project.data.slug }}-small.jpg" loading="lazy" width="200" height="355" alt="Small screen view of {{ project.data.title }}" />
 
 								</div>
 
@@ -38,7 +38,7 @@ layout: layouts/base.njk
 
 								<div class="overlay medium project__overlay project__overlay--medium">
 
-									<img src="/media/work/{{ project.data.slug }}-medium.jpg" width="200" height="355" alt="Medium screen view of {{ project.data.title }}" />
+									<img src="/media/work/{{ project.data.slug }}-medium.jpg" loading="lazy" width="200" height="355" alt="Medium screen view of {{ project.data.title }}" />
 
 								</div>
 
